@@ -28,6 +28,11 @@ export default function IngresarLista() {
                             <button onClick={() => {
                                 setTask(tasks.filter(t => t !== task));
                             }}>Eliminar</button>
+                            <button onClick={() => {
+                                const inputElement = document.getElementById("inputTask") as HTMLInputElement;
+                                inputElement.value = task;
+                                setTask(tasks.filter(t => t !== task));
+                            }}>Editar</button>
                         </li>
                     ))}
                 </ul>
