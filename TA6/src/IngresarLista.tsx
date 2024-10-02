@@ -23,7 +23,12 @@ export default function IngresarLista() {
             <div>
                 <ul>
                     {tasks.map((task) => (
-                        <li key={task}>{task}</li>
+                        <li key={task}>
+                            {task}
+                            <button onClick={() => {
+                                setTask(tasks.filter(t => t !== task));
+                            }}>Eliminar</button>
+                        </li>
                     ))}
                 </ul>
             </div>
