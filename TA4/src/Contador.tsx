@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import './App.css'
 
 const Contador = () => {
     const [count, setCount] = useState(0)
+
+    useEffect(() => {
+
+        document.title = `Contador: ${count}`
+        console.log(`Contador: ${count}`)
+
+    }, [count])
 
     return (
         <>
