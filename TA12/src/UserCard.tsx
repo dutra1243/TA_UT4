@@ -3,9 +3,11 @@ import Context from './Context'
 
 export const UserCard = () => {
 
-    const user = useContext(Context)
+    const [name, setInput] = useContext(Context)
 
     return (
-        <div>{user?.name}</div>
+        <div>
+            {name}
+        </div>
     )
 }

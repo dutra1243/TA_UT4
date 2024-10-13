@@ -1,10 +1,12 @@
 import React, { createContext } from 'react'
 
-interface UserProps {
+
+export interface UserProps {
     name: string
+    //nsetInput: () => void
 }
 
-export const Context = createContext<UserProps | undefined>(undefined)
+export const Context = createContext<any>(null)
 
 
 
