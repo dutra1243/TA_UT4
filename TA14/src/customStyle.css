@@ -6,12 +6,16 @@ html {
 
 }
 
-.dark {
+.dark,
+.dark>p {
     background-color: black;
+    color: white;
 
 }
 
-.light {
+.light,
+.light>p {
     background-color: white;
+    color: black;
 
 }
