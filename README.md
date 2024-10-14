@@ -1,4 +1,4 @@
-CONSIGNAS:  
+CONSIGNAS:
 TA 1
 Crear un componente Card, en ReactJS, que usando props despliegue la siguiente información:
 •	Título
